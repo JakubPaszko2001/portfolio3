@@ -97,10 +97,12 @@ const Contact = () => {
               setEmailText(e.target.value);
             }}
           />
-                    <label
+          <label
             for="message"
             className="text-xl font-semibold lg:text-2xl dark:text-light"
           >
+            Message
+          </label>
           <textarea
             id="message"
             className={inputStyle}
