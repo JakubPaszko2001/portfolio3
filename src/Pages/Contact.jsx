@@ -51,14 +51,6 @@ const Contact = () => {
         }
       );
   };
-  const Label = ({ htmlfor, text }) => (
-    <label
-      htmlFor={htmlfor}
-      className="text-xl font-semibold lg:text-2xl dark:text-light"
-    >
-      {text}
-    </label>
-  );
   const inputStyle =
     "w-[80%] xl:w-[60%] pl-2 py-2 text-xl font-semibold border-2 border-black rounded-xl bg-light dark:border-light dark:bg-dark dark:focus:bg-light focus:bg-black focus:text-light dark:text-light dark:focus:text-dark ease-in duration-200";
   return (
@@ -71,7 +63,12 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="w-full py-4 gap-4 flex flex-col justify-center items-center border-2 rounded-xl border-black dark:border-light col-start-2 col-end-6 lg:py-24"
         >
-          <Label htmlFor="name" text="Name" />
+          <label
+            for="name"
+            className="text-xl font-semibold lg:text-2xl dark:text-light"
+          >
+            Name
+          </label>
           <input
             id="name"
             className={inputStyle}
@@ -83,7 +80,12 @@ const Contact = () => {
               setNameText(e.target.value);
             }}
           />
-          <Label htmlFor="email" text="Email" />
+          <label
+            for="email"
+            className="text-xl font-semibold lg:text-2xl dark:text-light"
+          >
+            Email
+          </label>
           <input
             id="email"
             className={inputStyle}
@@ -95,7 +97,10 @@ const Contact = () => {
               setEmailText(e.target.value);
             }}
           />
-          <Label htmlFor="message" text="Message" />
+                    <label
+            for="message"
+            className="text-xl font-semibold lg:text-2xl dark:text-light"
+          >
           <textarea
             id="message"
             className={inputStyle}
