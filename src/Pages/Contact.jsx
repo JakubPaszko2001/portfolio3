@@ -71,7 +71,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="w-full py-4 gap-4 flex flex-col justify-center items-center border-2 rounded-xl border-black dark:border-light col-start-2 col-end-6 lg:py-24"
         >
-          <Label htmlFor={"name"} text={"Name"} />
+          <Label htmlFor="name" text="Name" />
           <input
             id="name"
             className={inputStyle}
@@ -83,7 +83,7 @@ const Contact = () => {
               setNameText(e.target.value);
             }}
           />
-          <Label htmlFor={"email"} text={"Email"} />
+          <Label htmlFor="email" text="Email" />
           <input
             id="email"
             className={inputStyle}
@@ -95,7 +95,7 @@ const Contact = () => {
               setEmailText(e.target.value);
             }}
           />
-          <Label htmlFor={"message"} text={"Message"} />
+          <Label htmlFor="message" text="Message" />
           <textarea
             id="message"
             className={inputStyle}
