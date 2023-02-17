@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .underlineText {
+    @apply relative after:transition-all after:duration-500 after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2.5px] hover:after:w-[100%] after:bg-black dark:after:bg-white;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  background-color: #d6a928 !important;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.modal::backdrop {
+  background: rgb(0, 0, 0, 0.5);
+}
+
+/* Text Animation */
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
+}
+.clippath {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Infinite Scrolling */
+
+.scrolling {
+  animation: infiniteScrolling 10s linear infinite;
+}
+@keyframes infiniteScrolling {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-50%, 0px, 0px);
+  }
+}
+
+.scrolling2 {
+  animation: infiniteScrolling 15s linear infinite;
+}
+@keyframes infiniteScrolling {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-50%, 0px, 0px);
+  }
+}
+@media (prefers-reduced-motion) {
+  .scrolling {
+    animation: none;
+  }
+  .scrolling2 {
+    animation: none;
+  }
+}
