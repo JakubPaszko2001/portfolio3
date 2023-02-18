@@ -27,13 +27,14 @@ const MobileNav = () => {
     gsap.to(asideRef.current, {
       y: "-100%",
       duration: 1,
+      delay: 0.4,
       ease: "power1.inOut",
     });
   }
 
   return (
     <nav className="md:hidden">
-      <div className="fixed top-0 left-0 w-screen h-32 bg-light dark:bg-dark z-40">
+      <div className="navbar fixed top-0 left-0 w-screen h-32 bg-light dark:bg-dark z-40">
         <button
           aria-label="Logo"
           className="absolute top-10 left-10 w-[50px] h-[50px]"
@@ -67,7 +68,7 @@ const MobileNav = () => {
         >
           <IoMdClose className="w-[50px] h-[50px]" />
         </button>
-        <NavUl menuOpen={menuOpen} />
+        <NavUl menuOpen={menuOpen} handleMenuClose={handleMenuClose} />
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
           <Icons menuOpen={menuOpen} />
         </div>

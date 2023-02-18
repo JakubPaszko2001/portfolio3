@@ -13,6 +13,12 @@
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
+    },
+    {
+      "src": "vite.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "start_url": ".",

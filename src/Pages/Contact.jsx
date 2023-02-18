@@ -54,7 +54,7 @@ const Contact = () => {
   const inputStyle =
     "w-[80%] xl:w-[60%] pl-2 py-2 text-xl font-semibold border-2 border-black rounded-xl bg-light dark:border-light dark:bg-dark dark:focus:bg-light focus:bg-black focus:text-light dark:text-light dark:focus:text-dark ease-in duration-200";
   return (
-    <section>
+    <section id="Contact">
       <Title header={header} paragraph={paragraph} />
       <div className="mb-14 grid grid-cols-6">
         <form

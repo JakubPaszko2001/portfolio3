@@ -8,12 +8,12 @@ const About = () => {
   const education = {
     title: "My learning journal",
     paragraf:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus",
+      "After ending my IT technical school I started learning more how to create websites. I'm working on projects for about one year now. Knowledge I've own is from youtube, scrimba and forums. Learning by my own feels much better for me rather then studying, I feel much more comfortable and focused.",
   };
   const hobbies = {
-    title: "My skills",
+    title: "Favorite things to do",
     paragraf:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus",
+      "I'm interested in clothes, music, cinematography and cars. Me and my friend ",
   };
   const learning = {
     title: "Leargning",
@@ -47,7 +47,7 @@ const About = () => {
     toggleActive(appState.objects[0].id - 1);
   }, []);
   return (
-    <section>
+    <section id="About">
       <Title header={header} paragraph={paragraph} />
       <div className="grid grid-cols-6">
         <section className="col-start-2 col-end-6 md:col-end-4">
