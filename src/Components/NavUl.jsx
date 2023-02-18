@@ -21,7 +21,7 @@ const NavUl = ({ menuOpen, handleMenuClose }) => {
               tabIndex={menuOpen === true ? 0 : -1}
               href={`#${item.name}`}
               rel="noreferrer"
-              className="underlineText flex"
+              className="slideDown1 underlineText flex"
             >
               {item.name}
               {item.span && <span className="hidden md:block ml-2">|</span>}

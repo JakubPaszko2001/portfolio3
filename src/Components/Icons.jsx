@@ -36,7 +36,7 @@ const Icons = ({ menuOpen }) => {
   }, [theme]);
 
   return (
-    <div className="flex items-center text-4xl gap-4 md:gap-2">
+    <div className="slideDown flex items-center text-4xl gap-4 md:gap-2">
       <a
         href="https://www.linkedin.com/in/jakub-paszko-42409424b/"
         target="_blank"

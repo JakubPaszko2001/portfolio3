@@ -45,15 +45,19 @@ const Main = () => {
                 "-=2"
               )
               .fromTo(
-                ".navbar",
+                ".slideDown",
+                { opacity: 0, y: "-100%" },
+                { opacity: 1, y: 0, duration: 0.5 }
+              )
+              .fromTo(
+                ".slideDown1",
                 { opacity: 0, y: "-100%" },
                 { opacity: 1, y: 0, duration: 0.5 }
               )
               .fromTo(
                 ".email",
                 { opacity: 0, y: "100%" },
-                { opacity: 1, y: 0, duration: 0.5 },
-                "+=0.5"
+                { opacity: 1, y: 0, duration: 0.5 }
               );
           }
         }
