@@ -5,7 +5,7 @@ import gsap from "gsap";
 const Main = () => {
   const Border = ({ rotate, divClass }) => (
     <div
-      className={`${divClass} hidden md:block box1 w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] z-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-black dark:border-light ${
+      className={`${divClass} hidden md:block box1 w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-black dark:border-light ${
         rotate ? "rotate-45" : "rotate-0"
       }`}
     />

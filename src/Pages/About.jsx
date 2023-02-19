@@ -47,8 +47,8 @@ const About = () => {
     toggleActive(appState.objects[0].id - 1);
   }, []);
   return (
-    <section id="About">
-      <Title header={header} paragraph={paragraph} />
+    <section data-aos="fade-up" id="About">
+      <Title header={header} paragraph={paragraph} firstMargin={true} />
       <div className="grid grid-cols-6">
         <section className="col-start-2 col-end-6 md:col-end-4">
           <div className="w-full flex justify-between mb-4">

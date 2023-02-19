@@ -64,7 +64,7 @@ const Projects = () => {
     },
   ];
   return (
-    <section id="Projects">
+    <section data-aos="fade-up" data-aos-offset="500" id="Projects">
       <Title header={header} paragraph={paragraph} />
       <section className="grid grid-cols-6 gap-4">
         {projects.map(({ src, name, start, live, github, information }) => (
