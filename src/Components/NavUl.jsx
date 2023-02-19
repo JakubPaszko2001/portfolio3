@@ -15,9 +15,7 @@ const NavUl = ({ menuOpen, handleMenuClose }) => {
             <Link
               to={item.name}
               onClick={handleMenuClose}
-              smooth={true}
               offset={-140}
-              duration={500}
               tabIndex={menuOpen === true ? 0 : -1}
               href={`#${item.name}`}
               rel="noreferrer"

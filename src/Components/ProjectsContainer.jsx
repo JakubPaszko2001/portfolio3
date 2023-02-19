@@ -21,6 +21,8 @@ const ProjectsContainer = ({
         className="rounded-lg"
         loading="lazy"
         threshold={300}
+        width={674}
+        height={383}
         src={src}
         alt={name + "icon"}
       />

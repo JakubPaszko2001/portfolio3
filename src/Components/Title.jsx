@@ -2,6 +2,7 @@ import { React } from "react";
 const Title = ({ header, paragraph, firstMargin }) => {
   return (
     <div
+      data-aos="fade-up"
       className={`w-screen flex flex-col justify-center items-center my-16 ${
         firstMargin ? "!mt-0 md:!mt-16" : ""
       }`}
