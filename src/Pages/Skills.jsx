@@ -26,7 +26,7 @@ const Skills = () => {
     { path: figma, name: "FIGMA" },
   ];
   return (
-    <section data-aos="fade-up" data-aos-offset="500" id="Skills">
+    <section data-aos="fade-up" id="Skills">
       <Title header={header} paragraph={paragraph} />
       <InfiniteScroll icons={iconsUpper} scrolling={"scrolling"} />
       <InfiniteScroll icons={iconsLower} scrolling={"scrolling2"} />
