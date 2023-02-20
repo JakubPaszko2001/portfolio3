@@ -33,7 +33,7 @@ const Projects = () => {
       information: {
         header: "Lyricks Project",
         paragraphs:
-          "My first Redux project built with tutorail. I haven't written music bar. I created whole Artist details page, you can check it if you click at author name. I had to deep into music bar and make some changes, becouse top songs data are coming from other api query which got diffrently build data structure. It took me some time to figure out system, but finally I made it work.",
+          "My first Redux project built with tutorail. I haven't written music bar. I created all components with lesson. Whole Artist details page, which you can check it if you click at author name was created all by my own. I had to deep into music bar and make some changes, becouse top songs data are coming from other api query which got diffrently build data structure. It took me some time to figure out system, but finally I made it work.",
         technogies: "React, Redux, Tailwind",
       },
     },
